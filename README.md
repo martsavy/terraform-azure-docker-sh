@@ -52,11 +52,13 @@ $Env:ARM_TENANT_ID = "<TENANT_VALUE>"
 
 ## 3. Provision infrastructure:
 
-### 3.1 Change docker image name to your own:
+### 3.1 Change variables
 
 #### 3.1.1 open file: variables.tf
 
-#### 3.1.2 set your value for variable "image" (replace default value "amartsavy/my-sh-app:1.0")
+#### 3.1.2 set your value for variable "prefix" (replace default value "amartsavy-demo-sh")
+
+#### 3.1.3 set docker image name by set value for variable "image" (replace default value "amartsavy/my-sh-app:1.0")
 
 ### 3.2 Provision infrastructure
 ```
