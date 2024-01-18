@@ -23,6 +23,7 @@ docker push <YOUR-DOCKERHUB-NAME>/my-sh-app:1.0
 
 ## 2. Create ServicePrincipal in Azure for get access terraform to Azure.
 https://developer.hashicorp.com/terraform/tutorials/azure-get-started/azure-build
+
 https://learn.microsoft.com/en-us/azure/developer/terraform/authenticate-to-azure?tabs=bash#create-a-service-principal
 
 ### 2.1 Login to Azure and create Azure AD application
@@ -41,12 +42,12 @@ output example:
 }
 ```
 
-### 2.2 Set local environment variables
+### 2.2 Set local environment variables (PowerShell)
 ```
-$ $Env:ARM_CLIENT_ID = "<APPID_VALUE>"
-$ $Env:ARM_CLIENT_SECRET = "<PASSWORD_VALUE>"
-$ $Env:ARM_SUBSCRIPTION_ID = "<SUBSCRIPTION_ID>"
-$ $Env:ARM_TENANT_ID = "<TENANT_VALUE>"
+$Env:ARM_CLIENT_ID = "<APPID_VALUE>"
+$Env:ARM_CLIENT_SECRET = "<PASSWORD_VALUE>"
+$Env:ARM_SUBSCRIPTION_ID = "<SUBSCRIPTION_ID>"
+$Env:ARM_TENANT_ID = "<TENANT_VALUE>"
 ```
 
 ## 3. Provision infrastructure:
