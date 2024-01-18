@@ -49,6 +49,10 @@ $Env:ARM_CLIENT_SECRET = "<PASSWORD_VALUE>"
 $Env:ARM_SUBSCRIPTION_ID = "<SUBSCRIPTION_ID>"
 $Env:ARM_TENANT_ID = "<TENANT_VALUE>"
 ```
+### 2.3 Login to Azure as a service (need for the next step 3. Provision infrastructure)
+```
+az login --service-principal -u $Env:ARM_CLIENT_ID -p $Env:ARM_CLIENT_SECRET --tenant $Env:ARM_TENANT_ID
+```
 
 ## 3. Provision infrastructure:
 
