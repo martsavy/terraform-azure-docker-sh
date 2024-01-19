@@ -48,7 +48,7 @@ az login --service-principal -u $Env:ARM_CLIENT_ID -p $Env:ARM_CLIENT_SECRET --t
 
 ### 2.2 Provision infrastructure
 
-#### 3.2.1 Init 
+#### 2.2.1 Init 
 ```
 cd infrastructure_with_acr
 terraform init
@@ -60,7 +60,7 @@ terraform apply -target="azurerm_container_registry.example"
 ```
 ##### note: you get expected warning: "Warning: Applied changes may be incomplete"
 
-#### 2.2.2 Provision all other resources (include docker image)
+#### 2.2.3 Provision all other resources (include docker image)
 ```
 terraform apply
 ```
