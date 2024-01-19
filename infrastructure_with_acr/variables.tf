@@ -12,6 +12,6 @@ variable "location" {
 
 variable "image" {
   type        = string
-  description = "Full name with tag of the docker image in the public docker hub"
+  description = "Full name with tag of the docker image"
   default     = "amartsavy/my-sh-app:1.0"
 }
