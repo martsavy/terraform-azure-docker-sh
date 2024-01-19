@@ -50,7 +50,7 @@ az login --service-principal -u $Env:ARM_CLIENT_ID -p $Env:ARM_CLIENT_SECRET --t
 
 #### 3.2.1 Init 
 ```
-cd infrastructure_with_ecr
+cd infrastructure_with_acr
 terraform init
 ```
 
